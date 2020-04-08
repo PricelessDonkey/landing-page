@@ -18,7 +18,6 @@ body {
     color: #fff;
 }
 
-
 /* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
@@ -88,6 +87,10 @@ section {
     transition: ease 0.3s all;
 }
 
+.navbar__menu .menu__link.your-active-class {
+    border: 2px solid orange;
+}
+
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -95,6 +98,11 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    transition: top 0.4s;
+}
+
+.page__header.hidden {
+    top: -100px;
 }
 
 /* Footer Styles */
